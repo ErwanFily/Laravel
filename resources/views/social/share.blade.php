@@ -1,29 +1,29 @@
+<div class="social-buttons">
 
-<div class="row">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}"
+       target="_blank">
+        <i class="fa fa-facebook-official"></i>
+    </a>
 
-    <div class="col-md-8">
+    <a href="https://twitter.com/intent/tweet?url={{ urlencode($url) }}"
+       target="_blank">
+        <i class="fa fa-twitter-square"></i>
+    </a>
 
-        <h3 class="profile-edit">{{ $image->title }}</h3>
+    <a href="https://plus.google.com/share?url={{ urlencode($url) }}"
+       target="_blank">
+        <i class="fa fa-google-plus-square"></i>
+    </a>
 
-        <h4>By <a href="{{route('profile', $image->user->username)}}">{{ $image->user->username }}</a> </h4>
+    <a href="https://pinterest.com/pin/create/button/?{{
+        http_build_query([
+            'url' => $url,
+            'media' => $image,
+            'description' => $description
+        ])
+        }}" target="_blank">
+        <i class="fa fa-pinterest-square"></i>
+    </a>
 
-        <h4>About</h4><p>{{$image->description }}</p>
-        <p>Availability: <strong>{{ $image->status }}</strong></p>
-    </div>
-
-    <div class="col-md-4">
-
-        <div class="thumbnail">
-            <a href="{{ $image->file }}" class="fresco"  data-fresco-group="{{$image->user->username}}">
-                <img src="{{ $image->file }}" alt="{{ $image->title }}" class="img-rounded">
-            </a>
-            <p class="text-right">{{$image->created_at->diffForHumans()}}</p>
-            <p class="text-left text-left-margin">{{$image->updated_at->diffForHumans()}}</p>
-        </div>
-
-
-        @include('social.share')
-
-    </div>
 </div>
-@stop
+

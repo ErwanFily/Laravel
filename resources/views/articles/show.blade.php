@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -23,8 +24,15 @@
                                 Pas d'utilisateur
                             @endif
                         </p>
+                            <p>Partager: @include('social.share', [
+                                    'url' => request()->fullUrl(),
+                                    'description' => 'This is really cool link',
+                                    'image' => 'http://placehold.it/300x300?text=Cool+link'
+                            ]) </p>
                         <a href="{{route('article.index')}}">Retour</a>
+
                     </div>
+
                 </div>
             </div>
         </div>
