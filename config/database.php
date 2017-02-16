@@ -48,6 +48,7 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
+            'unix_socket' => env('MAC_UNIX_SOCKET'),
             'prefix' => '',
             'strict' => true,
             'engine' => null,
