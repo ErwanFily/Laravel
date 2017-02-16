@@ -24,6 +24,9 @@
                                 Pas d'utilisateur
                             @endif
                         </p>
+
+                            <a href="{{ route('article.like', $article->id) }}">Like this awesome product!</a><br>
+
                             <p>Partager: @include('social.share', [
                                     'url' => request()->fullUrl(),
                                     'description' => 'This is really cool link',
