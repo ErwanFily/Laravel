@@ -31,10 +31,50 @@
                             ]) </p>
                         <a href="{{route('article.index')}}">Retour</a>
 
-                    </div>
+                           <hr>
 
+                            <div class="comments">
+                                <ul class="list-group">
+
+                                    @foreach ($article->comments as $comment)
+                                        <li class="list-group-item">
+                                            <strong>
+                                                {{ $comment->created_at->diffForHumans() }}
+                                            </strong>
+                                            {{ $comment->body }}
+                                        </li>
+                                    @endforeach
+
+                                </ul>
+                            </div>
+
+                            <hr>
+
+                            <div class="card">
+                                <div class="card-block">
+                                    <form method="POST" action="/article/{{ $article->id }}/comments">
+
+                                        {{ csrf_field() }}
+                                        <div class="form-group">
+                                            <textarea name="body" placeholder="Votre commentaire ici." class="form-control">
+
+                                            </textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Ajouter un commentaire</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
 @endsection
