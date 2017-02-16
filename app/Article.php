@@ -31,4 +31,5 @@ class Article extends Model
         'article_id' => $this->id
         ]);
     }
+
 }
