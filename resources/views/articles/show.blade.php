@@ -25,7 +25,7 @@
                             @endif
                         </p>
 
-                            <a href="{{ route('article.like', $article->id) }}">Aimer l'Article</a><br>
+                            <a href="{{ route('article.like', $article->id) }}">Aimer l'article</a><br>
                             <a href="{{route('article.edit', [$article->id])}}">Modifier l'article</a><br>
                             <br>
                             <p>Partager: @include('social.share', [
