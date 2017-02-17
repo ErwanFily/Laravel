@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+
+        .footer{
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+    </style>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -50,11 +61,11 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style=" color:white; background-color: #23BA99;  border-color: #23BA99;">
                                     Login
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn btn-link" href="{{ route('password.request') }}" style=" color:#23BA99;">
                                     Forgot Your Password?
                                 </a>
                             </div>

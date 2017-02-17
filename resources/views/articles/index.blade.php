@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    a{
+        color: #23BA99;
+    }
+</style>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -17,8 +22,8 @@
                         @forelse($articles as $article)
                             <h1>{{ $article->title }}</h1>
                             <p>{{ $article->content }}</p>
-                            <a href="{{route('article.show', ['id' => $article->id])}}">
-                                Voir mon article
+                            <a href="{{route('article.show', ['id' => $article->id])}}" >
+                                Voir l'article
                             </a>
                         @empty
                             Rien du tout
@@ -31,4 +36,5 @@
             </div>
         </div>
     </div>
+
 @endsection

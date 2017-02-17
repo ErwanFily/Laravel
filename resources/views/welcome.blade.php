@@ -63,6 +63,12 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .flex-center{
+                color:black;
+                background-color:#EBFFFA;
+
+            }
         </style>
     </head>
     <body>
@@ -83,16 +89,13 @@
 
 
             <div class="content">
+                <img src="img/Perroquet-rieur.png" alt="Perroquet rieur" style="width:280px;height:280px;">
                 <div class="title m-b-md">
-                    Laravel
+                    Perroquet rieur
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+   
                 </div>
             </div>
         </div>

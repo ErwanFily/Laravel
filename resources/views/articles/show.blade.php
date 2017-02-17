@@ -6,7 +6,6 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
 
                     <div class="panel-body">
                         @if(session('success'))
@@ -25,15 +24,15 @@
                             @endif
                         </p>
 
-                            <a href="{{ route('article.like', $article->id) }}">Aimer l'article</a><br>
-                            <a href="{{route('article.edit', [$article->id])}}">Modifier l'article</a><br>
+                            <a href="{{ route('article.like', $article->id) }}" style="color:#23BA99;">Aimer l'article</a><br>
+                            <a href="{{route('article.edit', [$article->id])}}" style="color:#23BA99;">Modifier l'article</a><br>
                             <br>
                             <p>Partager: @include('social.share', [
                                     'url' => request()->fullUrl(),
                                     'description' => 'This is really cool link',
                                     'image' => 'http://placehold.it/300x300?text=Cool+link'
                             ]) </p>
-                        <a href="{{route('article.index')}}">Retour</a>
+                        <a href="{{route('article.index')}}"  style="color:#23BA99;">Retour</a>
 
                            <hr>
 
@@ -66,7 +65,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-primary">Ajouter un commentaire</button>
+                                            <button type="submit" class="btn btn-outline-primary" style="background-color:#23BA99; color:white;">Ajouter un commentaire</button>
                                         </div>
 
                                     </form>

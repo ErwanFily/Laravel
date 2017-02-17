@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
+                    <div class="panel-heading">Dashboard Admin</div>
 
                     <div class="panel-body">
 
@@ -27,7 +27,7 @@
                                     <input type="hidden" name="_method" value="DELETE">
                                     <div class="form-group">
                                         <div class="col-xs-10">
-                                            <button type="submit" class="btn btn-primary">Supprimer</button>
+                                            <button type="submit" class="btn btn-primary" style="background-color:#DC3737; color:white; border-color: #DC3737">Supprimer</button>
                                         </div>
                                     </div>
                                 </form>

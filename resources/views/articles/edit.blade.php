@@ -1,11 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+
+        .footer{
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+    </style>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
+                    <div class="panel-heading">Modifier un article</div>
 
                     <div class="panel-body">
                         <form method="POST" class="form-horizontal" action="{{route('article.update', [$article->id])}}">
@@ -25,7 +36,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-xs-offset-2 col-xs-10">
-                                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                                    <button type="submit" class="btn btn-primary" style="background-color:#23BA99; color:white; border-color: #23BA99">Envoyer</button>
                                 </div>
                             </div>
                         </form>
@@ -35,7 +46,7 @@
                                 <form method="POST" class="form-horizontal" action="{{route('article.destroy', [$article->id])}}">
                                     {{csrf_field()}}
                                     <input type="hidden" name="_method" value="DELETE">
-                                    <button type="submit" class="btn btn-primary">Supprimer</button>
+                                    <button type="submit" class="btn btn-primary" style="background-color:#DC3737; color:white; border-color: #DC3737">Supprimer</button>
                                 </form>
                             </div>
                         </div>

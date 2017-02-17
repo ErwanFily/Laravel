@@ -14,7 +14,7 @@ class admin
     public function handle($request, Closure $next)
     {
         if(Auth::check()
-            && Auth::user()->email == "cedfer77@hotmail.fr") {
+            && Auth::user()->email == "erwanfily@hotmail.fr") {
             return $next($request);
         }
         return redirect('home')->with('success', "Accès refusé");

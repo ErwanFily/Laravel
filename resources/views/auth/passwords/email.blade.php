@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+
+        .footer{
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+    </style>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -32,7 +43,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="background-color:#23BA99; color:white; border-color:  #23BA99">
                                     Send Password Reset Link
                                 </button>
                             </div>

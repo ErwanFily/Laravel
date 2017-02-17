@@ -12,7 +12,15 @@
 
     <!-- Styles -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    <style>
+    body{
 
+        background-color:#EBFFFA;
+
+    }
+
+
+    </style>
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -36,8 +44,10 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <img src="img/Perroquet-rieur.png" alt="Perroquet rieur" style="width:30px;height:30px;">
+
                     </a>
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -81,5 +91,18 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+
+    <nav class=" footer navbar-default  navbar-static-bottom" style="height: 40px">
+        <div id="footer">
+
+            <div class="container">
+                <p class="text-muted credit" ><span style="text-align: left; float: left">&copy; 2017 <a href="#" style="color: #23BA99">Perroquet rieur</a></span> <span class="hidden-phone"
+                                                    style="text-align: right; float: right">Powered by: <a style="color: #23BA99"
+                                href="http://laravel.com/" alt="Laravel 5.1">Laravel 5.4</a></span></p>
+            </div>
+
+        </div>
+    </nav>
+
 </body>
 </html>
