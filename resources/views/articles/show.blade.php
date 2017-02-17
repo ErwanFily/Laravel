@@ -37,6 +37,8 @@
 
                             <a href="{{ route('article.like', $article->id) }}" style="color:#23BA99;">Aimer l'article</a><br>
                             <a href="{{route('article.edit', [$article->id])}}" style="color:#23BA99;">Modifier l'article</a><br>
+
+
                             <br>
                             <p>Partager: @include('social.share', [
                                     'url' => request()->fullUrl(),

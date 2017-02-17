@@ -27,6 +27,8 @@
                         @empty
                             Rien
                         @endforelse
+                        <hr>
+                            <a href="{{route('article.create', [$article->id])}}" style="color:#23BA99;">Créer un article</a><br>
                     </div>
                 </div>
             </div>
