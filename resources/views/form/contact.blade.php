@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+
+        .footer{
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+    </style>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
