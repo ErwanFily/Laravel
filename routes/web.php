@@ -31,6 +31,12 @@ Route::get('/user', 'UserController@index');
 
 Route::post('/article/{article}/comments', 'CommentsController@store');
 
+Route::get('/contact',
+    ['as' => 'contact', 'uses' => 'FormsController@create']);
+Route::post('/contact',
+    ['as' => 'contact_store', 'uses' => 'FormsController@store']);
+
+
 //EXO1
 
 /*Route::get('/iim', function() {
