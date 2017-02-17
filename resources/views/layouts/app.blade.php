@@ -44,7 +44,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="img/Perroquet-rieur.png" alt="Perroquet rieur" style="width:30px;height:30px;">
+                        <img src="/img/Perroquet-rieur.png" alt="Perroquet rieur" style="width:30px;height:30px;">
 
                     </a>
 
