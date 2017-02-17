@@ -2,6 +2,17 @@
 
 @section('content')
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+
+        .footer{
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+    </style>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
